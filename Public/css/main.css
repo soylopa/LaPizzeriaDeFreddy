@@ -118,3 +118,26 @@
 .pricing button {
     
 }
+
+.size-buttons {
+    display: flex;
+    justify-content:  space-around;
+    position: absolute;
+    top: 30vh;
+    width: 30%;
+}
+   
+
+
+.size-s, .size-m, .size-l   {
+    border-radius: 5em;
+    border-style: none;
+    filter: blur(0.2rem);
+    width: 2vw;
+
+}
+
+.size-s:hover, .size-m:hover, .size-l:hover {
+    filter: blur(0rem);
+    transition-duration: 0.21s;
+}
