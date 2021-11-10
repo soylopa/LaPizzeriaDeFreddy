@@ -2,3 +2,18 @@
     display: flex;
     justify-content: space-evenly;
 }
+.size-buttons{
+    display: flex;
+    height: 3.5vmax;
+    width:3.5vmax;
+}
+.size-s{
+    border-radius: 50%;
+    
+}
+.size-m{
+    border-radius: 50%;
+}
+.size-l{
+    border-radius: 50%;
+}
