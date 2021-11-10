@@ -41,6 +41,7 @@
     border-style: solid;
     border-color: #C4C4C4;
     margin-bottom: 30px;
+    font-size: ;
 }
 
 .quantity h3 {
@@ -68,6 +69,27 @@
 
 .picking-size{
     width: 30vw;
+}
+
+.size-buttons {
+    display: flex;
+    justify-content:  space-around;
+    position: absolute;
+    top: 30vh;
+    width: 30%;
+}
+
+.size-s, .size-m, .size-l   {
+    border-radius: 5em;
+    border-style: none;
+    filter: blur(0.2rem);
+    width: 2vw;
+
+}
+
+.size-s:hover, .size-m:hover, .size-l:hover {
+    filter: blur(0rem);
+    transition-duration: 0.21s;
 }
 
 /* Aqui empieza el pricing */
@@ -101,10 +123,11 @@
     border-color: #C4C4C4;
     box-shadow: -5px 20px 15px #e18585;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .pricing button img {
     width: 1em;
     margin-right: 5px;
 }
+    
