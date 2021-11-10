@@ -12,11 +12,14 @@
     justify-content: space-evenly;
 }
 
+/* Aqui empieza la descripcion */
+
 .desc {
     display: flex;
     flex-direction: column;
     width: 35vw;
 }
+
 
 .ingredients h3 {
 
@@ -51,6 +54,12 @@
     border-style: solid;
     border-color: #C4C4C4;
 }
+
+/* Aqui empieza el picking */
+
+
+/* Aqui empieza el pricing */
+
 
 .pricing {
 
