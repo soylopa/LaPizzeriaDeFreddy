@@ -18,3 +18,14 @@ header{
     border-color: black;
 }
 
+.logo{
+    text-decoration: none;
+    color: black;
+    width: 30%;
+    display:flex;
+    
+}
+
+.img-logo{
+    width: 100%;
+}

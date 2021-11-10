@@ -10,7 +10,7 @@
 
 .info{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 /* Aqui empieza la descripcion */
@@ -18,7 +18,7 @@
 .desc {
     display: flex;
     flex-direction: column;
-    width: 35vw;
+    width: 30vw;
 }
 
 
@@ -62,16 +62,34 @@
     display: flex;
     flex-direction: column;
     width: 30vw;
+    position: relative;
+    top: 10vh;
     align-items: center;
     justify-content: center;
 }
 
-.size-buttons{
+.size-buttons {
     display: flex;
-    justify-content: space-around;
-    width: 40%;
-    
+    justify-content:  space-around;
+    top: 30vh;
+    width: 30%;
 }
+   
+
+
+.size-s, .size-m, .size-l   {
+    border-radius: 5em;
+    border-style: none;
+    filter: blur(0.2rem);
+    width: 2vw;
+
+}
+
+.size-s:hover, .size-m:hover, .size-l:hover {
+    filter: blur(0rem);
+    transition-duration: 0.21s;
+}
+
 
 .pick-arrows{
     display: flex;
@@ -103,7 +121,7 @@
 
 
 .pricing {
-    width: 35vw;
+    width: 30vw;
     
 }
 
@@ -119,25 +137,3 @@
     
 }
 
-.size-buttons {
-    display: flex;
-    justify-content:  space-around;
-    position: absolute;
-    top: 30vh;
-    width: 30%;
-}
-   
-
-
-.size-s, .size-m, .size-l   {
-    border-radius: 5em;
-    border-style: none;
-    filter: blur(0.2rem);
-    width: 2vw;
-
-}
-
-.size-s:hover, .size-m:hover, .size-l:hover {
-    filter: blur(0rem);
-    transition-duration: 0.21s;
-}
