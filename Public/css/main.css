@@ -1,4 +1,4 @@
-.title-pizza{
+/*.title-pizza{
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -7,14 +7,8 @@
     width: 100%;
 }
 
-
-
-
-
-
-
-
 .info{
     display: flex;
     justify-content: space-evenly;
-}
+}*/
+
