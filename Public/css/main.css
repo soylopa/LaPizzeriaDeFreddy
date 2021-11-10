@@ -1,19 +1,82 @@
+.title-pizza{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -1%;
+    text-align: center;
+    width: 100%;
+}
+
 .info{
     display: flex;
     justify-content: space-evenly;
 }
-.size-buttons{
+
+/* Aqui empieza la descripcion */
+
+.desc {
     display: flex;
-    height: 3.5vmax;
-    width:3.5vmax;
+    flex-direction: column;
+    width: 35vw;
 }
-.size-s{
-    border-radius: 50%;
+
+
+.ingredients h3 {
+
+}
+
+.ingredients p {
     
 }
-.size-m{
-    border-radius: 50%;
+
+.ingredients button {
+    width: 183px;
+    height: 47px;
+    border-radius: 50px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: #C4C4C4;
 }
-.size-l{
-    border-radius: 50%;
+
+.quantity-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.q-minus, .q-plus {
+    width: 40px;
+    height: 40px;
+    border-radius: 150px;
+    background-color: transparent;
+    margin-left: 7px;
+    margin-right: 7px;
+    border-style: solid;
+    border-color: #C4C4C4;
+}
+
+/* Aqui empieza el picking */
+
+.picking-size{
+    width: 30vw;
+}
+
+/* Aqui empieza el pricing */
+
+
+.pricing {
+    width: 35vw;
+    
+}
+
+.pricing h3 {
+    
+}
+
+.pricing p {
+    
+}
+
+.pricing button {
+    
 }
