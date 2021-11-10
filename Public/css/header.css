@@ -14,5 +14,6 @@ header{
 
 .bar-1, .bar-2, .bar-3 {
     width: 3vw;
-    border: 2px;
+    border-color: black;
 }
+

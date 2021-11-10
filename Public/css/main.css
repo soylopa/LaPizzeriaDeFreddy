@@ -1,16 +1,25 @@
 .title-pizza{
-.info {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -1%;
+    text-align: center;
+    width: 100%;
+}
+
+.info{
     display: flex;
     justify-content: space-evenly;
 }
 
-
+/* Aqui empieza la descripcion */
 
 .desc {
     display: flex;
     flex-direction: column;
     width: 35vw;
 }
+
 
 .ingredients h3 {
 
@@ -46,8 +55,18 @@
     border-color: #C4C4C4;
 }
 
-.pricing {
+/* Aqui empieza el picking */
 
+.picking-size{
+    width: 30vw;
+}
+
+/* Aqui empieza el pricing */
+
+
+.pricing {
+    width: 35vw;
+    
 }
 
 .pricing h3 {
@@ -60,4 +79,27 @@
 
 .pricing button {
     
+}
+
+.size-buttons {
+    display: flex;
+    justify-content:  space-around;
+    position: absolute;
+    top: 30vh;
+    width: 30%;
+}
+   
+
+
+.size-s, .size-m, .size-l   {
+    border-radius: 5em;
+    border-style: none;
+    filter: blur(0.2rem);
+    width: 2vw;
+
+}
+
+.size-s:hover, .size-m:hover, .size-l:hover {
+    filter: blur(0rem);
+    transition-duration: 0.21s;
 }
