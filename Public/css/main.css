@@ -5,6 +5,7 @@
     top: -1%;
     text-align: center;
     width: 100%;
+    display: none;
 }
 
 .info{
@@ -58,7 +59,44 @@
 /* Aqui empieza el picking */
 
 .picking-size{
+    display: flex;
+    flex-direction: column;
     width: 30vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.size-buttons{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    
+}
+
+.pick-arrows{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 5vh;
+    height: 30vh;
+    width: 20%;
+    background-color: white ;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.scroll-right{
+    background-color: transparent;
+    border-style: none;
+    fill: #6ED8E0;
+    
+}
+
+.scroll-left{
+    background-color: transparent;
+    border-style: none;
+    transform: rotate(180deg);
+    
 }
 
 /* Aqui empieza el pricing */
