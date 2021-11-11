@@ -1,17 +1,11 @@
 header{
     display: flex;
-<<<<<<< HEAD
-    justify-content: space-around;
-    padding: 0 5vmax;
-=======
     justify-content: space-evenly;
     align-items: center;
     height: 100px;
->>>>>>> abebd14d193e446a3073cf3d88bcc31be9475b7b
 }
 .nav-bar {
     display: flex;
-<<<<<<< HEAD
     justify-content: space-around;
 }
 .chart-icon {
@@ -22,7 +16,5 @@ header{
 .bar-1, .bar-2, .bar-3 {
     width: 3vw;
     border-color: black;
-=======
->>>>>>> abebd14d193e446a3073cf3d88bcc31be9475b7b
 }
 
