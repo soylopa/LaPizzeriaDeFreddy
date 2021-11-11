@@ -1,8 +1,8 @@
 header{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    height: 100px;
+    height: 20vh;
 }
 .nav-bar {
     display: flex;
@@ -19,13 +19,18 @@ header{
 }
 
 .logo{
+    width: 20%;
+    display:flex;
+    align-items: center;
+}
+
+.logo-txt{
     text-decoration: none;
     color: black;
-    width: 30%;
-    display:flex;
-    
+    font-size: 200%;
+    font-family: ;
 }
 
 .img-logo{
-    width: 100%;
+    width: 20%;
 }
