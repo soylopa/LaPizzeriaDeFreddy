@@ -22,22 +22,32 @@
 
 
 .ingredients h3 {
-
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 15px;
 }
 
 .ingredients p {
-    
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 30px;
 }
 
 .ingredients button {
-    width: 183px;
-    height: 47px;
+    width: 13.01em;
+    height: 3.36em;
     border-radius: 50px;
     background-color: transparent;
     border-style: solid;
     border-color: #C4C4C4;
+    margin-bottom: 30px;
+    font-size: ;
 }
 
+.quantity h3 {
+    margin: 0;
+    margin-bottom: 15px;
+}
 .quantity-buttons {
     display: flex;
     flex-direction: row;
@@ -45,40 +55,20 @@
 }
 
 .q-minus, .q-plus {
-    width: 40px;
-    height: 40px;
+    width: 3em;
+    height: 3em;
     border-radius: 150px;
     background-color: transparent;
-    margin-left: 7px;
-    margin-right: 7px;
+    margin: 0 7px;
     border-style: solid;
     border-color: #C4C4C4;
+
 }
 
 /* Aqui empieza el picking */
 
 .picking-size{
     width: 30vw;
-}
-
-/* Aqui empieza el pricing */
-
-
-.pricing {
-    width: 35vw;
-    
-}
-
-.pricing h3 {
-    
-}
-
-.pricing p {
-    
-}
-
-.pricing button {
-    
 }
 
 .size-buttons {
@@ -88,8 +78,6 @@
     top: 30vh;
     width: 30%;
 }
-   
-
 
 .size-s, .size-m, .size-l   {
     border-radius: 5em;
@@ -103,3 +91,43 @@
     filter: blur(0rem);
     transition-duration: 0.21s;
 }
+
+/* Aqui empieza el pricing */
+
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+}
+
+.pricing h3 {
+    font-size: 20px;  
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.pricing p {
+    font-size: 25px; 
+    font-weight: bold;   
+    margin: 0;  
+    margin-bottom: 30px;
+}
+
+.pricing button {
+    width: 183px;
+    height: 47px;
+    border-radius: 50px;
+    background-color: red;
+    border-style: none;
+    border-color: #C4C4C4;
+    box-shadow: -5px 20px 15px #e18585;
+    color: white;
+    font-size: 16px;
+}
+
+.pricing button img {
+    width: 1em;
+    margin-right: 5px;
+}
+    
