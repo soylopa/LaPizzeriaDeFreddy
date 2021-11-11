@@ -6,5 +6,15 @@ header{
 }
 .nav-bar {
     display: flex;
+    justify-content: space-around;
+}
+.chart-icon {
+    width: 2.5vw;  
+    height: 2.vh;
+}
+
+.bar-1, .bar-2, .bar-3 {
+    width: 3vw;
+    border-color: black;
 }
 
