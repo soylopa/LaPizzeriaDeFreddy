@@ -5,16 +5,14 @@
     top: -1%;
     text-align: center;
     width: 100%;
-    display: none;
 }
 
 .info{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .pizza1 {
-    
 }
 
 .pizza2 {
@@ -34,7 +32,7 @@
 .desc {
     display: flex;
     flex-direction: column;
-    width: 30vw;
+    width: 35vw;
 }
 
 
@@ -84,61 +82,35 @@
 /* Aqui empieza el picking */
 
 .picking-size{
-    display: flex;
-    flex-direction: column;
     width: 30vw;
-    position: relative;
-    top: 10vh;
-    align-items: center;
-    justify-content: center;
 }
 
 .size-buttons {
     display: flex;
-    justify-content:  space-around;
+    justify-content: space-evenly;
+    position: absolute;
     top: 30vh;
-    width: 30%;
+    width: 25%;
 }
 
-.size-s, .size-m, .size-l   {
-    border-radius: 5em;
-    border-style: none;
-    filter: blur(0.2rem);
-    width: 2vw;
-
-}
-
-.size-s:hover, .size-m:hover, .size-l:hover {
-    filter: blur(0rem);
-    transition-duration: 0.21s;
-}
-
-
-.pick-arrows{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 5vh;
-    height: 30vh;
-    width: 20%;
-    background-color: white ;
-    justify-content: center;
+.size-s, .size-m, .size-l {
+    width: 3.5em;
+    height: 3.5em;
     border-radius: 50px;
+    border-style: solid;
+    border-color: #C4C4C4;
+    background-color: transparent;
+    color: #C4C4C4;
+    font-size: 14px;
+    font-weight: bold;
 }
 
-.scroll-right{
-    background-color: transparent;
+*.size-s:focus, .size-m:focus, .size-l:focus {
+    transform: scale(1.35);
+    transition-duration: 0.21s;
+    background-color: white;
+    color: black;
     border-style: none;
-    fill: #6ED8E0;
-    
-    
-}
-
-.scroll-left{
-    background-color: transparent;
-    border-style: none;
-    transform: rotate(180deg);
-    
 }
 
 /* Aqui empieza el pricing */
