@@ -1,0 +1,25 @@
+let  pizza1info = document.querySelector(".pizza1")
+let  pizza2info = document.querySelector(".pizza2")
+let  pizza3info = document.querySelector(".pizza3")
+let  pizza4info = document.querySelector(".pizza4")
+
+function showpizza1(){
+    pizza1info.classList.toggle("show")
+}
+function showpizza2(){
+    pizza2info.classList.toggle("show")
+}
+function showpizza3(){
+    pizza3info.classList.toggle("show")
+}
+function showpizza4(){
+    pizza4info.classList.toggle("show")
+}
+let pizzas=[showpizza1 , showpizza2 , showpizza3 , showpizza4]
+
+document.querySelector(".img-logo").addEventListener("click",function(){
+    for (let i = 0; i < pizzas.length; i++) {
+        const element = pizzas[i];
+        console.log(element)
+    }
+})
