@@ -10,9 +10,14 @@
 .info{
     display: flex;
     justify-content: center;
+    position: relative;
+    top: 5vh;
 }
 
+
+
 .pizza1 {
+    display: none;
 }
 
 .pizza2 {
@@ -25,6 +30,10 @@
 
 .pizza4 {
     display: none;
+}
+
+.show{
+    display: block;
 }
 
 /* Aqui empieza la descripcion */
