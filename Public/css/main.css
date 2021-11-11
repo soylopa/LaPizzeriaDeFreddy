@@ -119,26 +119,28 @@
     flex-direction: column;
     position: relative;
     top: 5vh;
-    height: 30vh;
+    height: 20vh;
     width: 20%;
     background-color: white ;
     justify-content: center;
     border-radius: 50px;
+    align-items: center;
 }
 
 .scroll-right{
     background-color: transparent;
     border-style: none;
     fill: #6ED8E0;
-    
-    
+    height:30%;
+    width: 60%; 
 }
 
 .scroll-left{
     background-color: transparent;
     border-style: none;
     transform: rotate(180deg);
-    
+    height: 30%;
+    width: 60%;
 }
 
 /* Aqui empieza el pricing */
