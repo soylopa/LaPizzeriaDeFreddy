@@ -9,7 +9,7 @@
 
 .info{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .pizza1 {
@@ -32,7 +32,7 @@
 .desc {
     display: flex;
     flex-direction: column;
-    width: 35vw;
+    width: 30vw;
 }
 
 
@@ -82,15 +82,16 @@
 /* Aqui empieza el picking */
 
 .picking-size{
+    display: flex;
+    flex-direction: column;
     width: 30vw;
+    align-items: center;
 }
 
 .size-buttons {
     display: flex;
     justify-content: space-evenly;
-    position: absolute;
-    top: 30vh;
-    width: 25%;
+    width: 100%;
 }
 
 .size-s, .size-m, .size-l {
@@ -104,8 +105,7 @@
     font-size: 14px;
     font-weight: bold;
 }
-
-*.size-s:focus, .size-m:focus, .size-l:focus {
+.size-s:focus, .size-m:focus, .size-l:focus {
     transform: scale(1.35);
     transition-duration: 0.21s;
     background-color: white;
@@ -113,13 +113,42 @@
     border-style: none;
 }
 
+.pick-arrows{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 5vh;
+    height: 20vh;
+    width: 20%;
+    background-color: white ;
+    justify-content: center;
+    border-radius: 50px;
+    align-items: center;
+}
+
+.scroll-right{
+    background-color: transparent;
+    border-style: none;
+    fill: #6ED8E0;
+    height:30%;
+    width: 60%; 
+}
+
+.scroll-left{
+    background-color: transparent;
+    border-style: none;
+    fill: #6ED8E0;
+    transform: rotate(180deg);
+    height: 30%;
+    width: 60%;
+}
 /* Aqui empieza el pricing */
 
 
 .pricing {
     display: flex;
     flex-direction: column;
-    width: 35vw;
+    width: 30vw;
 }
 
 .pricing h3 {
