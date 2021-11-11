@@ -12,6 +12,22 @@
     justify-content: space-evenly;
 }
 
+.pizza1 {
+    
+}
+
+.pizza2 {
+    display: none;
+}
+
+.pizza3 {
+    display: none;
+}
+
+.pizza4 {
+    display: none;
+}
+
 /* Aqui empieza la descripcion */
 
 .desc {
@@ -41,7 +57,6 @@
     border-style: solid;
     border-color: #C4C4C4;
     margin-bottom: 30px;
-    font-size: ;
 }
 
 .quantity h3 {
