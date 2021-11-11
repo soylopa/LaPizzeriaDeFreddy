@@ -1,20 +1,45 @@
 header{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    height: 100px;
+    height: 20vh;
 }
 .nav-bar {
     display: flex;
     justify-content: space-around;
 }
 .chart-icon {
-    width: 2.5vw;  
-    height: 2.vh;
+    width: 2.5vw; 
+}
+
+.hamburger-icon{
+    
+    align-items: center;
+    justify-content: center;
 }
 
 .bar-1, .bar-2, .bar-3 {
     width: 3vw;
+    height: 0.5vh;
+    margin: 0.5px;
+    background-color: black;
     border-color: black;
+    border-radius: 20px;
 }
 
+.logo{
+    width: 20%;
+    display:flex;
+    align-items: center;
+}
+
+.logo-txt{
+    text-decoration: none;
+    color: black;
+    font-size: 200%;
+    
+}
+
+.img-logo{
+    width: 30%;
+}
