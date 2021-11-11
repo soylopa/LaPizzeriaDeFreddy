@@ -13,6 +13,22 @@
     justify-content: center;
 }
 
+.pizza1 {
+    
+}
+
+.pizza2 {
+    display: none;
+}
+
+.pizza3 {
+    display: none;
+}
+
+.pizza4 {
+    display: none;
+}
+
 /* Aqui empieza la descripcion */
 
 .desc {
