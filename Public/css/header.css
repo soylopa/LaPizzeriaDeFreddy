@@ -35,8 +35,10 @@ header{
 
 .logo-txt{
     text-decoration: none;
-    color: black;
-    font-size: 200%;
+    color: rgb(0, 0, 0);
+    font-size: 250%;
+    font-family: 'neon_pixel-7regular', cursive;
+    
     
 }
 

@@ -4,4 +4,6 @@ body {
     background-color: #E9E9E9;
     /* background-image: url("../img/fondopicseria.jpg");
     background-size: 1000px; */
+
+    overflow: hidden;
 }
