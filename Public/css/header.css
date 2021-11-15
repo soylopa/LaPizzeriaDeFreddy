@@ -45,3 +45,13 @@ header{
 .img-logo{
     width: 10%;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .logo-txt{
+        display: none;
+    }
+    .img-logo{
+        width: 50%;
+    }
+}
