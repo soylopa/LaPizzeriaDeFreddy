@@ -41,3 +41,22 @@ position: absolute;
 .position4{
     display: none;
 }
+
+
+.pizza-m{
+    width: 40%;
+    top: 0;
+    left: 30%;
+}
+
+.pizza-s{
+    width: 30%;
+    top: 0;
+    left: 35%;
+}
+
+.pizza-l{
+    width: 50%;
+    top: 0;
+    left: 25%;
+}
