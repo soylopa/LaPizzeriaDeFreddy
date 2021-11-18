@@ -1,51 +1,16 @@
 let numero = 1
 
 
-document.addEventListener("",function(){
-    number = numero++;
-    numberbefore = number-- 
-    let pizzas = eval(`pizza${numero}info`)
-    let pizzabefore = eval(`pizza${numberbefore}info`)
-    pizzas.classList.toggle("show")
-    pizzabefore.classList.toggle("show")
-    console.log(numero)
-})
-
-
-
-// document.querySelector(".img-logo").addEventListener("click",function(){
-//     for (let i = 0; i < pizzas.length; i++) {
-//         const element = pizzas[i];
-//         if element = true
-//         console.log(element)
-//     } 
+// a.addEventListener("",function(){
+//     number = numero++;
+//     numberbefore = number-- 
+//     let pizzas = eval(`pizza${numero}info`)
+//     let pizzabefore = eval(`pizza${numberbefore}info`)
+//     pizzas.classList.toggle("show")
+//     pizzabefore.classList.toggle("show")
+//     console.log(numero)
 // })
 
-
-
-
-// var numero = 1;
-// var pizza1 = "Pizza 1";
-// var pizza2 = "Pizza 2";
-// var pizza3 = "Pizza 3";
-// var pizza4 = "Pizza 4";
-
-// function adelantar() {
-//     numero ++;
-//     if(numero>4)
-//         numero = 1;
-//         var pizza = document.getElementById("pizza");
-//         pizza.src="pizza" + numero + ".png";
-
-// }
-
-// function retroceder() {
-//     numero --;
-//     if(numero<1)
-//         numero = 4;
-//         var pizza = document.getElementById("pizza");
-//         pizza.src="pizza" + numero + ".png";
-// }
 
 
 
@@ -53,7 +18,8 @@ let nombrepizza = document.querySelector(".title-pizza");
 let descripcion = document.querySelector(".description");
 let precio = document.querySelector(".precio")
 let img1 = document.querySelector("img-pizza1")
-
+let quantity = document.querySelector(".q-number")
+let quantityvalue = quantity.value
 
 
 
@@ -148,10 +114,9 @@ document.querySelector(".scroll-left").addEventListener("click", retroceder)
 document.querySelector(".q-plus").addEventListener("click",() => {
 document.querySelector(".q-number").value++
 })
-document.querySelector(".q-minus").addEventListener("click",() => {
-    document.querySelector(".q-number").value = (document.querySelector(".q-number").value == 1) ? 1 : document.querySelector(".q-number").value-1;
-    })
-
+quantity.addEventListener("click",() => {
+    quantityvalue = (quantityvalue == 1) ? 1 : quantityvalue-1;
+})
 document.querySelector(".size-m").addEventListener("click",togglesizem)
 document.querySelector(".size-l").addEventListener("click",togglesizel)
 document.querySelector(".size-s").addEventListener("click",togglesizes)
