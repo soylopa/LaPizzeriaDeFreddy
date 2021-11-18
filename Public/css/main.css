@@ -2,12 +2,12 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: -1%;
+    top: 5%;
     text-align: center;
     width: 100%;
     font-size: 80%;
     font-family: 'Press Start 2P', cursive;
-
+    user-select: none;
 }
 
 .info{
@@ -49,6 +49,17 @@
     margin-bottom: 30px;
 }
 
+.q-number{
+    border: none;
+    display: inline;
+    font-family: inherit;
+    font-size: inherit;
+    padding: none;
+    width: 1.5em;
+    background-color: transparent;
+    text-align: center;
+
+}
 .quantity h3 {
     margin: 0;
     margin-bottom: 15px;
@@ -76,6 +87,7 @@
     flex-direction: column;
     width: 30vw;
     align-items: center;
+    user-select: none;
 }
 
 .size-buttons {
@@ -95,13 +107,15 @@
     font-size: 14px;
     font-weight: bold;
 }
-.size-s:focus, .size-m:focus, .size-l:focus {
+.active {
     transform: scale(1.35);
     transition-duration: 0.21s;
     background-color: white;
     color: black;
     border-style: none;
 }
+
+
 
 .pick-arrows{
     display: flex;
@@ -114,6 +128,7 @@
     justify-content: center;
     border-radius: 50px;
     align-items: center;
+    
 }
 
 .scroll-right{
@@ -122,6 +137,7 @@
     fill: #6ED8E0;
     height:30%;
     width: 60%; 
+    
 }
 
 .scroll-left{

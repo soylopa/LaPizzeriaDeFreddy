@@ -1,51 +1,16 @@
 let numero = 1
 
 
-document.addEventListener("",function(){
-    number = numero++;
-    numberbefore = number-- 
-    let pizzas = eval(`pizza${numero}info`)
-    let pizzabefore = eval(`pizza${numberbefore}info`)
-    pizzas.classList.toggle("show")
-    pizzabefore.classList.toggle("show")
-    console.log(numero)
-})
-
-
-
-// document.querySelector(".img-logo").addEventListener("click",function(){
-//     for (let i = 0; i < pizzas.length; i++) {
-//         const element = pizzas[i];
-//         if element = true
-//         console.log(element)
-//     } 
+// a.addEventListener("",function(){
+//     number = numero++;
+//     numberbefore = number-- 
+//     let pizzas = eval(`pizza${numero}info`)
+//     let pizzabefore = eval(`pizza${numberbefore}info`)
+//     pizzas.classList.toggle("show")
+//     pizzabefore.classList.toggle("show")
+//     console.log(numero)
 // })
 
-
-
-
-// var numero = 1;
-// var pizza1 = "Pizza 1";
-// var pizza2 = "Pizza 2";
-// var pizza3 = "Pizza 3";
-// var pizza4 = "Pizza 4";
-
-// function adelantar() {
-//     numero ++;
-//     if(numero>4)
-//         numero = 1;
-//         var pizza = document.getElementById("pizza");
-//         pizza.src="pizza" + numero + ".png";
-
-// }
-
-// function retroceder() {
-//     numero --;
-//     if(numero<1)
-//         numero = 4;
-//         var pizza = document.getElementById("pizza");
-//         pizza.src="pizza" + numero + ".png";
-// }
 
 
 
@@ -53,7 +18,8 @@ let nombrepizza = document.querySelector(".title-pizza");
 let descripcion = document.querySelector(".description");
 let precio = document.querySelector(".precio")
 let img1 = document.querySelector("img-pizza1")
-
+let quantity = document.querySelector(".q-number")
+let quantityvalue = quantity.value
 
 
 
@@ -104,6 +70,56 @@ function retroceder() {
     precio.innerHTML =  eval(`precio${numero}`)
 }
 
+function togglesizel(){
+    document.querySelector(".size-l").classList.toggle("active", true)
+    document.querySelector(".size-m").classList.toggle("active") == true ? document.querySelector(".size-m").classList.toggle("active") : console.log("a");
+    document.querySelector(".size-s").classList.toggle("active") == true ? document.querySelector(".size-s").classList.toggle("active") : console.log("a");
+}
+function togglesizes(){
+    document.querySelector(".size-s").classList.toggle("active", true)
+    document.querySelector(".size-m").classList.toggle("active") == true ? document.querySelector(".size-m").classList.toggle("active") : console.log("a");
+    document.querySelector(".size-l").classList.toggle("active") == true ? document.querySelector(".size-l").classList.toggle("active") : console.log("a");
+}
+function togglesizem(){
+    document.querySelector(".size-m").classList.toggle("active", true)
+    document.querySelector(".size-s").classList.toggle("active") == true ? document.querySelector(".size-s").classList.toggle("active") : console.log("a");
+    document.querySelector(".size-l").classList.toggle("active") == true ? document.querySelector(".size-l").classList.toggle("active") : console.log("a");
+
+}
+
+function togglepizzas(){
+    document.querySelector(".position1").classList.toggle("pizza-s", true)
+    document.querySelector(".position1").classList.toggle("pizza-m") == true ? document.querySelector(".position1").classList.toggle("pizza-m") : console.log("a");
+    document.querySelector(".position1").classList.toggle("pizza-l") == true ? document.querySelector(".position1").classList.toggle("pizza-l") : console.log("a");
+}
+
+function togglepizzal(){
+    document.querySelector(".position1").classList.toggle("pizza-l", true)
+    document.querySelector(".position1").classList.toggle("pizza-m") == true ? document.querySelector(".position1").classList.toggle("pizza-m") : console.log("a");
+    document.querySelector(".position1").classList.toggle("pizza-s") == true ? document.querySelector(".position1").classList.toggle("pizza-s") : console.log("a");
+
+}
+
+function togglepizzam(){
+    document.querySelector(".position1").classList.toggle("pizza-m", true)
+    document.querySelector(".position1").classList.toggle("pizza-s") == true ? document.querySelector(".position1").classList.toggle("pizza-s") : console.log("a");
+    document.querySelector(".position1").classList.toggle("pizza-l") == true ? document.querySelector(".position1").classList.toggle("pizza-l") : console.log("a");
+
+}
+
+
+
 document.querySelector(".scroll-right").addEventListener("click", adelantar)
 document.querySelector(".scroll-left").addEventListener("click", retroceder)
-
+document.querySelector(".q-plus").addEventListener("click",() => {
+document.querySelector(".q-number").value++
+})
+quantity.addEventListener("click",() => {
+    quantityvalue = (quantityvalue == 1) ? 1 : quantityvalue-1;
+})
+document.querySelector(".size-m").addEventListener("click",togglesizem)
+document.querySelector(".size-l").addEventListener("click",togglesizel)
+document.querySelector(".size-s").addEventListener("click",togglesizes)
+document.querySelector(".size-m").addEventListener("click",togglepizzam)
+document.querySelector(".size-l").addEventListener("click",togglepizzal)
+document.querySelector(".size-s").addEventListener("click",togglepizzas)
