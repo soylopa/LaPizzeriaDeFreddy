@@ -1,4 +1,3 @@
-let numero = 0
 
 let pizzas = [
     {
@@ -7,7 +6,8 @@ let pizzas = [
         subtitulo: "PIZZA OF THE MONTH",
         descripcion: "Mild and creamy cheese, black olives, zesty, pepperoni & our <br>signature Italian-Style Pizza Sauce.",
         precio: 14.99,
-        imagen: "laimagen"
+        imagen: "laimagen",
+        size:''
     },
     {
         id: 2,
@@ -44,11 +44,12 @@ let pizzas = [
     
 ]
 
-let elmein = document.querySelector("main")
+let main = document.querySelector("main")
+
 
 
 function printhtml(index){
-    elmein.innerHTML = `<div class="pizza1 show">
+    main.innerHTML = `<div class="pizza1 show">
     <div class="title-pizza">
         <h1>${pizzas[index].nombre}</h1> <h2>${pizzas[index].subtitulo}</h2>
     </div>
@@ -92,27 +93,42 @@ function printhtml(index){
         </div>
     </div>
 </div>`
+    updateListeners()
+
 }
 
-
-function adelantar() {
-    numero++
-    printhtml(numero)
-
-   
-}
+let numero = 0
 printhtml(0);
 
+function adelantar() {
+    numero<pizzas.length-1 ? numero++ : '';
+    printhtml(numero);
+    
+}
+
 function retroceder() {
-    numero--;
+    numero>0 ? numero-- : '';
     printhtml(numero)
     
 }
 
-function togglesizel(){
-    document.querySelector(".size-l").classList.toggle("active", true)
-    document.querySelector(".size-m").classList.toggle("active", false) 
-    document.querySelector(".size-s").classList.toggle("active", false)
+
+function updateListeners () {
+    document.querySelector(".scroll-right").addEventListener("click", adelantar,)
+    document.querySelector(".scroll-left").addEventListener("click", retroceder)
+    document.querySelector(".size-m").addEventListener("click",togglesizem)
+    document.querySelector(".size-l").addEventListener("click",togglesizel)
+    document.querySelector(".size-s").addEventListener("click",togglesizes)
+    document.querySelector(".size-m").addEventListener("click",togglepizzam)
+    document.querySelector(".size-l").addEventListener("click",togglepizzal)
+    document.querySelector(".size-s").addEventListener("click",togglepizzas)
+}
+
+
+function togglesizel(clicked, b, c){
+    document.querySelector(clicked).classList.toggle("active", true)
+    document.querySelector(b).classList.toggle("active", false) 
+    document.querySelector(c).classList.toggle("active", false)
 }
 function togglesizes(){
     document.querySelector(".size-s").classList.toggle("active", true)
@@ -143,16 +159,10 @@ function togglepizzam(){
     document.querySelector(".position1").classList.toggle("pizza-s", false)
     document.querySelector(".position1").classList.toggle("pizza-l", false)
 }
-document.querySelector(".size-m").addEventListener("click",togglesizem)
-document.querySelector(".size-l").addEventListener("click",togglesizel)
-document.querySelector(".size-s").addEventListener("click",togglesizes)
-document.querySelector(".size-m").addEventListener("click",togglepizzam)
-document.querySelector(".size-l").addEventListener("click",togglepizzal)
-document.querySelector(".size-s").addEventListener("click",togglepizzas)
 
 
-document.querySelector(".scroll-right").addEventListener("click", adelantar)
-document.querySelector(".scroll-left").addEventListener("click", retroceder)
+
+
 
 let quantity = document.querySelector(".q-number")
 let quantityvalue = quantity.value
