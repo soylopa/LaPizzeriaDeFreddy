@@ -94,7 +94,6 @@ function printhtml(index){
     </div>
 </div>`
     updateListeners()
-
 }
 
 let numero = 0
@@ -125,10 +124,10 @@ function updateListeners () {
 }
 
 
-function togglesizel(clicked, b, c){
-    document.querySelector(clicked).classList.toggle("active", true)
-    document.querySelector(b).classList.toggle("active", false) 
-    document.querySelector(c).classList.toggle("active", false)
+function togglesizel(){
+    document.querySelector(".size-l").classList.toggle("active", true)
+    document.querySelector(".size-m").classList.toggle("active", false) 
+    document.querySelector(".size-s").classList.toggle("active", false)
 }
 function togglesizes(){
     document.querySelector(".size-s").classList.toggle("active", true)
